@@ -16,7 +16,8 @@
             }
             xmlhttp.onreadystatechange = function () {
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                    document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+                    var data = xmlhttp.responseText;
+                    console.log(data);
                 }
             }
             xmlhttp.open("GET", "https://3313148636.github.io/gulp-project/src/json_data/tweets.json", true);
